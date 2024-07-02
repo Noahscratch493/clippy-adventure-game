@@ -4,7 +4,7 @@ namespace SpriteKind {
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, location) {
     Level += 1
     if (Level == 2) {
-        tiles.setCurrentTilemap(tilemap`level2`)
+        tiles.setCurrentTilemap(tilemap`level7`)
         tiles.placeOnRandomTile(Clippy, assets.tile`myTile`)
     } else if (Level == 3) {
         tiles.setCurrentTilemap(tilemap`level3`)
@@ -16,7 +16,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, l
         tiles.setCurrentTilemap(tilemap`level0`)
         tiles.placeOnRandomTile(Clippy, assets.tile`myTile`)
     } else {
-        tiles.setCurrentTilemap(tilemap`level8`)
+        tiles.setCurrentTilemap(tilemap`blankTileMap`)
         sprites.destroy(Clippy)
         scene.setBackgroundImage(assets.image`EndScene`)
         game.showLongText("Clippy is Now Back in Microsoft Office.", DialogLayout.Center)
