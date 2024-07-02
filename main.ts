@@ -12,6 +12,9 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, l
     } else if (Level == 4) {
         tiles.setCurrentTilemap(tilemap`level4`)
         tiles.placeOnRandomTile(Clippy, assets.tile`myTile`)
+    } else if (Level == 5) {
+        tiles.setCurrentTilemap(tilemap`level0`)
+        tiles.placeOnRandomTile(Clippy, assets.tile`myTile`)
     } else {
         tiles.setCurrentTilemap(tilemap`level8`)
         sprites.destroy(Clippy)
